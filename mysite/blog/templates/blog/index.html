@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+form input.hello { width:1000px; height:500px; opacity:0.5; }
+</style>
+</head>
+<body>
+<form action="../../blog/encode/" method="post">
+  {% csrf_token %}
+  <input class="hello" type="text" name="hello" placeholder="please input"/>
+  <input type="submit" value="Submit"  width=10/>
+</form>
+</body>
+</html>
